@@ -1,0 +1,12 @@
+@mixin btnBorder($background-color) {
+    background-color: $background-color;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+}
+
+@mixin center {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

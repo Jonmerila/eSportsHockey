@@ -1,0 +1,9 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div {
+  background: green;
+}/*# sourceMappingURL=script.css.map */

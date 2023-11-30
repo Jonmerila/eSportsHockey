@@ -1,0 +1,87 @@
+@import "./partials/mixins";
+
+
+body {
+    margin:0;
+}
+
+
+.title-container {
+    @include center;
+    flex-direction: column
+}
+
+.teamTitleA {
+    border: 1px solid blue;
+    text-align:center;
+}
+
+#changeTeamNameA {
+    @include btnBorder(blue);
+}
+
+.teamTitleB {
+    border: 1px solid red;
+    text-align:center;
+}
+
+#changeTeamNameB {
+    @include btnBorder(red);
+}
+
+.teams-container {
+    @include center;
+    flex-direction: column;
+    width:100%;
+    height:600px;
+}
+
+.teams {
+    @include center;
+    border: 1px solid black;
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+.teamAList {
+    padding: 0px 10px 0px 0px;
+}
+.teamBList {
+    padding: 0px 10px 0px 0px;
+}
+
+.teamAContainer {
+    flex-direction:column;
+    border: 2px solid blue;
+    width:50%;
+    height:100%;
+}
+
+.teamBContainer {
+    border: 2px solid red;
+    width:50%;
+    height:100%;
+}
+
+button#addPlayer {
+    margin-bottom: 24px;
+}
+input#playerName{
+    margin: 6px;
+}
+
+li {
+    list-style-type:none;
+    border:1px solid black;
+    box-sizing:border-box;
+    padding: 4px;
+    button{
+
+    }
+
+    p {
+        margin: 4px 2px;
+    }
+}
+
